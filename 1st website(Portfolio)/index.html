@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Anurag Waskle</a>
+
+        
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Left Column: Text -->
+              <div class="col-md-6">
+                  <h1 class="mb-4">Hey! <br> I'm <span class="text-warning">Anurag Waskle</span>, <br> <span id="element"></span>
+                  <p class="mb-4">Frontend Developer based in India, designing with minimal and beautiful design in mind.</p>
+                  <div class="mt-4">
+                      <a href="#" class="btn btn-warning me-3">Mail Me</a>
+                      <a href="#" class="btn btn-outline-warning">Download CV</a>
+                  </div>
+              </div>
+  
+              <!-- Right Column: Image -->
+              <div class="col-md-6 text-center">
+                  <img src="assets/picture.png" class="img-fluid rounded-circle  img-first  " alt="Anurag Waskle">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- About Section -->
+    <section class="about-section py-6 bg-light">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 text-center">
+                  <img src="assets/anurag.png" class=" img2    img-fluid rounded-circle mb-3" alt="Anurag">
+              </div>
+              <div class="col-md-8">
+                  <h2><b>Creating Digital Experiences</b></h2>
+                  <br>
+                  <p><span class="text-warning">Frontend Development</span> for cutting-edge websites and web applications.</p>
+                  <p><span class="text-warning">UI/UX Expertise</span> with projects designed, ensuring smooth and intuitive user interactions.</p>
+                  <p><span class="text-warning">Innovative Design</span> from concept to creation, including <strong>'Nebula of Secrets'</strong>, a dynamic storytelling book.</p>
+                  <p>Collaborating closely with teams and clients to deliver high-impact digital solutions across platforms.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- about section end -->
+   <!-- Skills section start -->
+   <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>What I Do</h2>
+        <p class="text-muted">Awesome Quality Services</p>
+      </div>
+      <div class="row text-center">
+        <!-- Web Design -->
+        <div class="col-md-3 mb-4">
+          <div class="service-box p-4 border">
+            <i class="fas fa-laptop fa-3x text-danger mb-3"></i>
+            <h4 class="mb-3">Web Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <!-- Web Development -->
+        <div class="col-md-3 mb-4">
+          <div class="service-box p-4 border">
+            <i class="fas fa-code fa-3x text-danger mb-3"></i>
+            <h4 class="mb-3">Web Development</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <!-- Skills: Programming -->
+        <div class="col-md-3 mb-4">
+          <div class="service-box p-4 border">
+            <i class="fas fa-cogs fa-3x text-danger mb-3"></i>
+            <h4 class="mb-3">Programming Skills</h4>
+            <p>HTML, Bootstrap, CSS, Python, C++</p>
+          </div>
+        </div>
+        <!-- Skills: Learning -->
+        <div class="col-md-3 mb-4">
+          <div class="service-box p-4 border">
+            <i class="fas fa-brain fa-3x text-danger mb-3"></i>
+            <h4 class="mb-3">Currently Learning</h4>
+            <p>JavaScript, UI/UX, Prompt Engineering, Content Writing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- skills section ends -->
+
+
+
+
+<!-- certification   -->
+
+
+<div class="certificates-section">
+    <h1>My Certificates</h1>
+    <div class="certificate-container">
+        <img src="assets/Wordpress Certificates.jpg" alt="Certificate 1" class="certificate" onclick="openModal('assets/Wordpress Certificates.jpg')">
+        <img src="assets/Prompt Engineering.jpg" alt="Certificate 2" class="certificate" onclick="openModal('assets/Prompt Engineering.jpg')">
+        <img src="assets/c++ certificate.jpg" alt="Certificate 3" class="certificate" onclick="openModal('assets/c++ certificate.jpg')">
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal(event)">×</span>
+    <img class="modal-content" id="modal-img" alt="">
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- social media start -->
+    <div class="container2">
+      <div class="card1">
+        <h3 class="title">All Tags</h3>
+        <span class="tag__name">html</span>
+        <span class="tag__name">css</span>
+        <span class="tag__name">bootstrap</span>
+        <span class="tag__name">python</span>
+        <span class="tag__name">c++</span>
+        <span class="tag__name">javascript</span>
+        <span class="tag__name">ui/ux</span>
+        <span class="tag__name">prompt engineering</span>
+        <span class="tag__name">content writing</span>
+      </div>
+    </div>
+    
+    
+     <!-- social media end -->
+    
+
+<!-- Call to Action Section -->
+<section class="cta-section py-5 bg-warning">
+  <div class="container text-center">
+      <h3>Interested working with me?</h3>
+      <div class="d-flex justify-content-center mt-3">
+          <a href="#" class="btn btn-light me-3">Email Me</a>
+          <a href="#" class="btn btn-outline-light">See More Projects</a>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Footer start -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+      <div class="row">
+          
+          
+          <!-- Quick Links -->
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Home</a></li>
+                  <li><a href="#" class="text-white">Projects</a></li>
+                  <li><a href="#" class="text-white">About</a></li>
+                  <li><a href="#" class="text-white">Contact</a></li>
+              </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="col-md-4">
+              <h5>Follow Me</h5>
+              <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="#" class="text-white"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+          <p>&copy; 2024 Anurag Waskle. All Rights Reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<!-- Footer ends -->
+
+<script src="index.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web content writer', 'Python developer ', ' Video editor ', 'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ', 'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+                'Web Developer', 'Web content writer', 'Python developer ', ' Video editor ',
+
+        
+            ],
+            typeSpeed: 70,
+        });
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
